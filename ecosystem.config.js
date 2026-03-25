@@ -17,9 +17,9 @@ module.exports = {
       cwd: './backend',
       env_production: {
         NODE_ENV: 'production',
-        PORT: 3000,
-        DB_ADDRESS: 'mongodb://localhost:27017/mestodb',
-        JWT_SECRET: '7f3e2a1b8c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f',
+        PORT: process.env.PORT,
+        DB_ADDRESS: process.env.DB_ADDRESS,
+        JWT_SECRET: process.env.JWT_SECRET,
       },
     },
   ],
